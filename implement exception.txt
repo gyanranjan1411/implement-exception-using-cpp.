@@ -1,0 +1,17 @@
+#include<iostream>//implement exception handling
+using namespace std;
+int main()
+{
+	int x;
+	cout<<"Enter the value of x "<<endl;
+	cin>>x;
+	try
+	{
+		if(x<0)
+		throw x;
+	}
+	catch(int x1)
+	{
+		cout<<"value of x is less then zero";
+	}
+}
